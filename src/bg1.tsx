@@ -17,7 +17,7 @@ if (isVirtualQueueOrigin(origin)) {
     renderApp(client, Merlock)
   );
 } else {
-  location.href = 'https://joelface.github.io/bg1/start.html';
+  location.href = 'https://mikem2005.github.io/bg1/start.html';
 }
 
 async function renderApp(apiClient: Client, ClientUI: React.FunctionComponent) {
