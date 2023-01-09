@@ -58,11 +58,14 @@ export default function GeniePlusList({
             onClick={showLightningPickModal}
           />
         ) : dropTime && exp.drop ? (
-          <InfoButton
-            name={UPCOMING_DROP}
-            icon={DropIcon}
-            onClick={showDropTimeModal}
-          />
+          <>
+            <InfoButton
+              name={UPCOMING_DROP}
+              icon={DropIcon}
+              onClick={showDropTimeModal}
+            />
+            {displayTime(dropTime)}
+          </>
         ) : null}
         {exp.flex.preexistingPlan && (
           <InfoButton
